@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-dy-pAi">
+                                <rect key="frame" x="130" y="318" width="92" height="30"/>
+                                <state key="normal" title="分享到盆友圈"/>
+                                <connections>
+                                    <action selector="clickedToTimeLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INx-3p-jG2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7x-Mg-Etr">
+                                <rect key="frame" x="146" y="366" width="77" height="30"/>
+                                <state key="normal" title="分享到盆友"/>
+                                <connections>
+                                    <action selector="clickedToSession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJO-a6-IYz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="分享标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNu-h1-jmV">
+                                <rect key="frame" x="153" y="106" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="分享描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2V-M5-abQ">
+                                <rect key="frame" x="152" y="213" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-W1-Nye">
+                                <rect key="frame" x="136" y="135" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Is2-0G-mRO"/>
+                                    <constraint firstAttribute="width" constant="300" id="Xp2-RB-KV8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWy-uI-h4n">
+                                <rect key="frame" x="136" y="256" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4sD-fi-Xep"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-Gb-dgp">
+                                <rect key="frame" x="130" y="461" width="108" height="30"/>
+                                <state key="normal" title="分享网页到朋友"/>
+                                <connections>
+                                    <action selector="shareUrlToSession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ec2-mS-0Vy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsB-ZH-AIZ">
+                                <rect key="frame" x="136" y="413" width="123" height="30"/>
+                                <state key="normal" title="分享网页到朋友圈"/>
+                                <connections>
+                                    <action selector="shareUrlToTimeLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Csj-sS-qiZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80337520299999998" green="0.74355596049999995" blue="0.34442177210000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SUA-Gb-dgp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="093-Z5-Tpk"/>
+                            <constraint firstItem="v2V-M5-abQ" firstAttribute="top" secondItem="zq6-W1-Nye" secondAttribute="bottom" constant="30" id="GeA-Yx-kFB"/>
+                            <constraint firstItem="SUA-Gb-dgp" firstAttribute="top" secondItem="HsB-ZH-AIZ" secondAttribute="bottom" constant="30" id="LQL-Mq-rLA"/>
+                            <constraint firstItem="eNu-h1-jmV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="M8J-dB-Gag"/>
+                            <constraint firstItem="zq6-W1-Nye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N1U-IC-zI0"/>
+                            <constraint firstItem="eNu-h1-jmV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJq-Uu-VGT"/>
+                            <constraint firstItem="HsB-ZH-AIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ajy-jR-WWN"/>
+                            <constraint firstItem="tWy-uI-h4n" firstAttribute="top" secondItem="v2V-M5-abQ" secondAttribute="bottom" constant="30" id="bUa-zG-og8"/>
+                            <constraint firstItem="v2V-M5-abQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpF-vC-CMN"/>
+                            <constraint firstItem="HsB-ZH-AIZ" firstAttribute="top" secondItem="c7x-Mg-Etr" secondAttribute="bottom" constant="30" id="cD7-lv-N0e"/>
+                            <constraint firstItem="c7x-Mg-Etr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dEh-kT-vYE"/>
+                            <constraint firstItem="tWy-uI-h4n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfR-gP-Q42"/>
+                            <constraint firstItem="HT7-dy-pAi" firstAttribute="top" secondItem="tWy-uI-h4n" secondAttribute="bottom" constant="30" id="k9z-gj-HzZ"/>
+                            <constraint firstItem="zq6-W1-Nye" firstAttribute="top" secondItem="eNu-h1-jmV" secondAttribute="bottom" constant="30" id="p54-TR-a47"/>
+                            <constraint firstItem="HT7-dy-pAi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uYK-5a-Ea6"/>
+                            <constraint firstItem="c7x-Mg-Etr" firstAttribute="top" secondItem="HT7-dy-pAi" secondAttribute="bottom" constant="30" id="wyX-jO-Z3D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="shareDesciptionTextField" destination="tWy-uI-h4n" id="3qg-Ni-A3u"/>
+                        <outlet property="shareTitleTextField" destination="zq6-W1-Nye" id="8VD-I3-TJl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
