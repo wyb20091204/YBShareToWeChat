@@ -353,7 +353,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareToWeChat/OpenSDK1.7.5",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wyb.ShareToWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourselfBundleID.yb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -370,7 +370,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareToWeChat/OpenSDK1.7.5",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wyb.ShareToWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourselfBundleID.yb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

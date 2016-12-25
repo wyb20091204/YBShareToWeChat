@@ -1,3 +1,8 @@
+/**********************************************************
+
+代码版权归原作者所有，请尊重源码版本
+*********************************************************** */
+
 //
 //  AppDelegate+WeiXin.m
 //  ShareToWeChat
@@ -9,7 +14,7 @@
 #import "AppDelegate+WeiXin.h"
 
 // 微信appId
-#define kWeiChatAppId  @"wx9d4b9f65e8a2503b"
+#define kWeiChatAppId  @"wx"
 
 @implementation AppDelegate (WeiXin)
 
