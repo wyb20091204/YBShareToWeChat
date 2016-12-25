@@ -13,10 +13,11 @@ URL Type 里面微信白名单的 URL Schemes 改成自己申请的那个AppID
 
 AppDelegate+WeiXin.h 里面 那个宏定义
 // 微信appId
-#define kWeiChatAppId  改成自己申请的AppID
+kWeiChatAppId  改成自己申请的AppID
 
 # 希望对你的学习有帮助
 demo下载地址：
 https://github.com/wyb20091204/YBShareToWeChat.git
+
 博客链接地址：
 http://blog.sina.com.cn/s/blog_c1bfb3030102xaw8.html
